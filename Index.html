@@ -1,271 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H Labs | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Henock Ami, développeur web à Kolwezi.">
+  <title>Henock Ami | Développeur Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <img src="IMAGES/LOGO.PNG" alt="Logo de H Labs" width="150">
-            <h1>H Labs</h1>
-            <p>Building Modern Web Experiences</p>
-            <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul id="navigation-principale" class="nav-links">
-                <li><a href="#Accueil">Accueil</a></li>
-                <li><a href="#apropos">A propos</a></li>
-                <li><a href="#compétences">Compétences</a></li>
-                <li><a href="#h-labs">H Labs</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigation principale">
+      <a class="brand" href="#accueil" aria-label="Accueil — Henock Ami">
+        <img class="brand-logo" src="IMAGES/BLANC.png" alt="Logo Henock Ami">
+        <span>HENOCK <b>AMI</b></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale"><span></span><span></span><span></span></button>
+      <div id="navigation-principale" class="nav-panel">
+        <ul class="nav-links">
+          <li><a href="#accueil">Accueil</a></li><li><a href="#apropos">À propos</a></li><li><a href="#services">Services</a></li><li><a href="#projets">Projets</a></li><li><a href="#processus">Processus</a></li><li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="nav-cta" href="#contact">Demander un projet <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Activer le mode sombre" title="Changer de thème"><i class="fa-solid fa-moon"></i></button>
+    </nav>
+  </header>
 
-        </nav>
-    </header>
-    <main>
-    <section id="Accueil" class="hero hidden">
-        <div class="container">
-        <div class="hero-text">
-            <h2>Bonjour, je suis</h2>
-            <h1>Henock Ami</h1>
-            <p>
-                Développeur Web &bull; CEO H Labs &bull; Artiste chrétien &bull; Passionné par la technologie
-            </p>
-            <div class="buttons">
-                <a href="https://github.com/henockspeech-hash" target="_blank" rel="noopener noreferrer" class="btn github">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i> Mon GitHub
-                </a>
-                <a href="mailto:henockspeech@gmail.com" class="btn email">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i> henockspeech@gmail.com
-                </a>
-            </div>   
+  <main>
+    <section id="accueil" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow light">Développeur web & créateur de solutions digitales</p>
+          <h1>Des sites web conçus pour présenter votre activité, gagner en visibilité et convertir vos visiteurs en clients.</h1>
+          <p class="hero-description">Je conçois des sites web modernes, responsive et adaptés aux objectifs de chaque projet, avec une attention particulière portée à l'expérience utilisateur, à la performance et à l'identité de chaque activité.</p>
+          <div class="button-row"><a class="button primary" href="#projets">Voir mes projets <i class="fa-solid fa-arrow-down"></i></a><a class="button outline" href="#contact">Parlons de votre projet</a></div>
         </div>
+        <div class="hero-visual reveal">
+          <div class="hero-photo-wrap"><img src="IMAGES/MOI.jpg" alt="Henock Ami, développeur web"><div class="photo-badge"><i class="fa-solid fa-code"></i><span>Web<br>Developer</span></div></div>
+          <p class="tech-line">HTML <b>•</b> CSS <b>•</b> JavaScript <b>•</b> Responsive Design <b>•</b> UI/UX</p>
         </div>
+      </div>
     </section>
-    <section id="h-labs" class="why-us hidden">
-        <div class="container">
-            <div class="section-intro">
-                <span class="eyebrow">L’approche H Labs</span>
-                <h2>Pourquoi choisir H Labs&nbsp;?</h2>
-                <p>Parce qu’un bon site ne se contente pas d’être beau&nbsp;: il doit raconter votre histoire, inspirer confiance et aider votre projet à avancer.</p>
-            </div>
-            <div class="reasons-grid">
-                <article class="reason-card">
-                    <div class="reason-icon"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i></div>
-                    <h3>Une identité qui vous ressemble</h3>
-                    <p>Chaque interface est pensée autour de votre activité, de vos objectifs et de votre univers, sans modèle impersonnel.</p>
-                </article>
-                <article class="reason-card">
-                    <div class="reason-icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div>
-                    <h3>Simple sur tous les écrans</h3>
-                    <p>Votre site est clair, fluide et agréable à consulter sur téléphone, tablette comme ordinateur.</p>
-                </article>
-                <article class="reason-card">
-                    <div class="reason-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
-                    <h3>Un accompagnement humain</h3>
-                    <p>H Labs prend le temps d’écouter votre besoin afin de transformer votre idée en une présence en ligne utile et cohérente.</p>
-                </article>
-            </div>
-        </div>
+
+    <section id="apropos" class="section about-section">
+      <div class="container about-grid reveal">
+        <div class="section-heading"><p class="eyebrow">Mon profil</p><h2>À propos de moi</h2></div>
+        <div class="about-content"><p class="lead">Je suis Henock Ami, développeur web passionné par la création de solutions digitales modernes et utiles.</p><p>Mon approche consiste à comprendre avant de développer. Chaque projet commence par l'identification du besoin, des objectifs et du public visé afin de construire une solution adaptée à la réalité du client.</p><p>Je m'intéresse particulièrement aux projets qui permettent aux entreprises, commerces, entrepreneurs et organisations de renforcer leur présence en ligne et de faciliter la relation avec leurs clients.</p><dl class="details-list"><div><dt>Nom</dt><dd>Henock Ami</dd></div><div><dt>Profession</dt><dd>Développeur Web</dd></div><div><dt>Localisation</dt><dd>Kolwezi, RDC</dd></div><div><dt>Disponibilité</dt><dd>Projets locaux & à distance</dd></div><div><dt>Spécialité</dt><dd>Création de sites web modernes</dd></div></dl><blockquote>« Créer du digital qui sert réellement les objectifs de ceux qui me font confiance. »</blockquote></div>
+      </div>
     </section>
-    <section class="values hidden" aria-labelledby="values-title">
-        <div class="container">
-            <div class="values-copy">
-                <span class="eyebrow">Ce qui nous guide</span>
-                <h2 id="values-title">Nos valeurs</h2>
-                <p>Ces principes sont au cœur de chaque collaboration et de chaque ligne de code créée chez H Labs.</p>
-            </div>
-            <div class="values-list">
-                <article class="value-item">
-                    <span>01</span>
-                    <div><h3>Professionnalisme</h3><p>Une communication claire, une attention aux détails et le respect de vos objectifs.</p></div>
-                </article>
-                <article class="value-item">
-                    <span>02</span>
-                    <div><h3>Créativité</h3><p>Des idées actuelles et des designs soignés pour donner du caractère à votre présence digitale.</p></div>
-                </article>
-                <article class="value-item">
-                    <span>03</span>
-                    <div><h3>Engagement</h3><p>Votre projet compte&nbsp;: nous avançons avec sérieux pour vous livrer une solution dont vous pouvez être fier.</p></div>
-                </article>
-            </div>
-        </div>
-    </section>
-    
-    <section id="apropos"  class="about hidden">
-        <div class="container">
-        <div class="about-image">
-            <img src="IMAGES/MOI.jpg" alt="Henock_Ami_LeH">
-        </div>
-        <div class="about-text">
-            <h2>A propos de nous</h2>
-            <p>Bonjour ! Je m'appelle <strong>Henock Ami</strong>.
-            Je suis développeur web, CEO H Labs, passionné de la technologie.
-        </p>
-        <p>Notre objectif est de créer des sites web modernes, donner visibilité et crédibilité à vos projets.
-            
-        </p>
-        </div>
-        </div>
-    </section>
-    <section id="compétences" class="skills hidden">
-        <div class="container"> 
-        <h2>Mes compétences</h2>
-        <p class="skills-description">
-            Voici quelques compétences acquises.
-        </p>
-        <div class="skills-container">
-            <div class="card">
-                <h3>HTML</h3>
-                <p>Je maîtrise la création de la structure d'un site web.</p>
-            </div>
-            <div class="card">
-                <h3>CSS</h3>
-                <p>Je réalise des interfaces modernes et responsives.</p>
-            </div>
-            <div class="card">
-                <h3>JavaScript</h3>
-                <p>Je rends les sites interactifs et dynamiques.</p>
-            </div>
-            <div class="card">
-                <h3>Design responsive</h3>
-                <p>Je conçois des pages qui s'adaptent naturellement aux téléphones, tablettes et ordinateurs.</p>
-            </div>
-            <div class="card">
-                <h3>Git &amp; GitHub</h3>
-                <p>J'utilise le versionnement pour organiser mon travail, suivre les changements et collaborer efficacement.</p>
-            </div>
-            <div class="card">
-                <h3>UX &amp; accessibilité</h3>
-                <p>Je crée des parcours simples, lisibles et inclusifs afin que chaque visiteur puisse utiliser le site facilement.</p>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section id="projets" class="projets hidden">
-        <div class="section-title">
-        <h2>Nos projets</h2>
-        <p>
-            Voici quelques projets réalisés au cours de nos formations.</p>
-        </div>
-        <div class="projets-container">
-            <div class="projets-card">
-                 <div class="projet-image">
-             <img src="IMAGES/mon site.jpeg" alt="Premier projet">
-                 </div>
-                 <div class="projets-content">
-             <h3>Notre premier site HTML</h3>
-             <p>
-                Un site créé une semaine après avoir appris les bases du HTML et CSS.
-             </p>
-                     <div class="projet-technologies">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                     </div>
-                     <div class="projet-buttons">
-                <a href="indexa.html" class="bnt-projets">Voir le projet</a>
-                <a href="#" class="bnt-projets secondary">Code source</a>
-                     </div>
-                </div>   
-            </div>
-            <div class="projets-card">
-                <div class="projet-image">
-                    <img src="IMAGES/MON PORTFOLIO.jpeg" alt="Apperçu de mon portfolio">
-                </div>
-                 <div class="projets-content">
-                     <h3>Notre portfolio</h3> 
-                     <p>
-                     Un portfolio personnel créé dans le cadre de notre apprentissage.
-                     </p>  
-                         <div class="projet-technologies">
-                             <span>HTML</span>
-                             <span>CSS</span>
-                             <span>JavaScript</span>
-                         </div>
-                         <div class="projet-buttons">
-                             <a href="projet-portfolio.html" class="bnt-projets">Voir le projet</a>
-                             <a href="#" class="bnt-projets secondary">Code source</a>
-                         </div>
-                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="web-importance hidden" aria-labelledby="web-importance-title">
-        <div class="container">
-            <div class="importance-panel">
-                <div class="importance-content">
-                    <span class="eyebrow">Votre présence digitale</span>
-                    <h2 id="web-importance-title">Pourquoi avoir un site web&nbsp;?</h2>
-                    <p>Votre site est votre espace professionnel sur internet. Il présente votre activité, rassure vos visiteurs et reste accessible à tout moment.</p>
-                    <a href="#contact" class="btn importance-btn">Parlons de votre projet <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                </div>
-                <ul class="importance-points">
-                    <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Gagnez en crédibilité</strong>Une vitrine professionnelle renforce la confiance autour de votre marque ou de votre activité.</span></li>
-                    <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Soyez visible à toute heure</strong>Vos informations et vos réalisations restent disponibles, même lorsque vous ne l’êtes pas.</span></li>
-                    <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Développez vos opportunités</strong>Faites découvrir vos services à de nouveaux clients, partenaires ou communautés.</span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="contact hidden">
-        <div class="container">
-        <h2>Contact</h2>
-        <p>
-            Avez-vous besoin d'un site web pour un de vos projets (boutique en ligne, entreprise, école, église, etc.) ou avez-vous une question ? N'hésitez pas à nous contacter.
-        </p>
-        <form id="contact-form">
-            <input type="text" name="nom" placeholder="Votre nom" aria-label="Votre nom" required>
-            <input type="email" name="email" placeholder="Votre e-mail" aria-label="Votre e-mail" required>
-            <input type="text" name="sujet" placeholder="Sujet" aria-label="Sujet">
-            <textarea name="message" placeholder="Votre message" aria-label="Votre message" rows="6" required></textarea>
-            <button type="submit">Envoyer le message</button>
-            <p class="form-note">Votre application e-mail s’ouvrira pour envoyer votre message.</p>
-        </form>
-        </div>
-    </section> 
-    </main>
-    <footer class="footer hidden">
-        <div class="container">
-        <h2>Henock Ami</h2>   
-        <p>
-            Développeur web &bull; Créateur de contenu
-        </p>
-        <p class="whatsapp-contact">
-            <a href="https://wa.me/243972010300" target="_blank" rel="noopener noreferrer" aria-label="Contacter Henock Ami sur WhatsApp">
-                <i class="fa-brands fa-whatsapp"></i> +243 972 010 300
-            </a>
-        </p>
-        <div class="socials">
-            <a href="https://youtube.com/@Henock_Ami_LeH" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-        </div>  
-        <p class="copyright">
-            &copy; 2026 H Labs. Tous Droits Réservés.
-        </p>
-        </div>
-    </footer>
-    <script src="script.js"></script>        
-    </body>
+
+    <section id="services" class="section muted-section"><div class="container"><div class="section-heading centered reveal"><p class="eyebrow">Ce que je fais</p><h2>Mes services</h2><p>Des solutions web claires et adaptées à votre activité.</p></div><div class="cards-grid services-grid">
+      <article class="service-card reveal"><i class="fa-solid fa-window-maximize"></i><h3>Site vitrine</h3><p>Des sites modernes pour présenter clairement votre activité, vos services et vos coordonnées.</p></article>
+      <article class="service-card reveal"><i class="fa-solid fa-bullseye"></i><h3>Landing Page</h3><p>Des pages pensées autour d'un objectif précis : présenter une offre ou générer des demandes.</p></article>
+      <article class="service-card reveal"><i class="fa-solid fa-globe"></i><h3>Présence digitale</h3><p>Une présence web cohérente pour présenter et faire découvrir votre activité en ligne.</p></article>
+      <article class="service-card reveal"><i class="fa-solid fa-store"></i><h3>Site pour commerce</h3><p>Présentez vos produits, collections, services et moyens de commande directement sur le web.</p></article>
+      <article class="service-card reveal"><i class="fa-solid fa-mobile-screen-button"></i><h3>Responsive Design</h3><p>Des interfaces fluides sur smartphones, tablettes et ordinateurs.</p></article>
+      <article class="service-card reveal"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Maintenance & amélioration</h3><p>Correction, amélioration et évolution de votre site selon les nouveaux besoins.</p></article>
+    </div></div></section>
+
+    <section id="projets" class="section"><div class="container"><div class="section-heading centered reveal"><p class="eyebrow">Réalisations</p><h2>Projets sélectionnés</h2><p>Découvrez une sélection de projets conçus pour répondre à différents besoins et problématiques digitales.</p></div><div class="projects-grid">
+      <article class="project-card reveal"><div class="project-image"><img src="IMAGES/BOUTIQUE.PNG" alt="Aperçu du projet Shop Online"></div><div class="project-content"><p class="project-type">Projet conceptuel</p><h3>Shop_Online</h3><p>Concept de présence web pour une boutique en ligne, pensé pour présenter ses collections et faciliter les commandes.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-actions"><a href="#" aria-label="Voir le projet Shop Online">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://github.com/henockspeech-hash" target="_blank" rel="noopener">Voir le code <i class="fa-brands fa-github"></i></a></div></div></article>
+      <article class="project-card reveal"><div class="project-image"><img src="IMAGES/PORTFOLIO.PNG" alt="Aperçu du portfolio professionnel"></div><div class="project-content"><p class="project-type">Projet personnel</p><h3>Portfolio professionnel</h3><p>Portfolio personnel conçu pour présenter mes services, mes compétences et faciliter les prises de contact.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-actions"><a href="#" aria-label="Voir le projet portfolio">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://github.com/henockspeech-hash" target="_blank" rel="noopener">Voir le code <i class="fa-brands fa-github"></i></a></div></div></article>
+      <article class="project-card reveal"><div class="project-image"><img src="IMAGES/COMMERCE.PNG" alt="Aperçu du projet Commerce local"></div><div class="project-content"><p class="project-type">Projet à venir</p><h3>Commerce local</h3><p>Concept de site pour une activité locale : services, informations utiles et contact direct depuis le site.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-actions"><a href="#contact">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://github.com/henockspeech-hash" target="_blank" rel="noopener">Voir le code <i class="fa-brands fa-github"></i></a></div></div></article>
+    </div></div></section>
+
+    <section id="processus" class="section dark-section"><div class="container"><div class="section-heading reveal"><p class="eyebrow light">Ma méthode de travail</p><h2>Une méthode simple, du besoin à la mise en ligne.</h2></div><ol class="process-list">
+      <li class="reveal"><span>01</span><div><h3>Échange</h3><p>Nous discutons de votre activité, de vos objectifs et de vos besoins.</p></div></li><li class="reveal"><span>02</span><div><h3>Analyse</h3><p>J'identifie les fonctionnalités, contenus et éléments nécessaires au projet.</p></div></li><li class="reveal"><span>03</span><div><h3>Conception</h3><p>Je structure l'expérience utilisateur et l'interface pour une solution claire.</p></div></li><li class="reveal"><span>04</span><div><h3>Développement</h3><p>Je transforme la conception en expérience web responsive et optimisée.</p></div></li><li class="reveal"><span>05</span><div><h3>Tests</h3><p>Vérification du fonctionnement, de l'affichage et des interactions.</p></div></li><li class="reveal"><span>06</span><div><h3>Livraison</h3><p>Mise à disposition du projet et accompagnement pour sa prise en main.</p></div></li>
+    </ol></div></section>
+
+    <section class="section"><div class="container"><div class="section-heading centered reveal"><p class="eyebrow">La différence</p><h2>Pourquoi travailler avec moi ?</h2></div><div class="cards-grid why-grid">
+      <article class="why-card reveal"><i class="fa-solid fa-magnifying-glass"></i><h3>Compréhension du besoin</h3><p>Je cherche d'abord à comprendre votre activité et vos objectifs avant de proposer une solution.</p></article><article class="why-card reveal"><i class="fa-solid fa-wand-magic-sparkles"></i><h3>Design moderne</h3><p>Des interfaces propres et pensées pour offrir une expérience agréable.</p></article><article class="why-card reveal"><i class="fa-solid fa-mobile"></i><h3>Adapté au mobile</h3><p>Votre site est efficace aussi bien sur smartphone que sur ordinateur.</p></article><article class="why-card reveal"><i class="fa-solid fa-comments"></i><h3>Communication directe</h3><p>Un échange simple et direct tout au long du projet.</p></article><article class="why-card reveal"><i class="fa-solid fa-puzzle-piece"></i><h3>Solutions adaptées</h3><p>Je privilégie les solutions utiles plutôt que la complexité inutile.</p></article>
+    </div></div></section>
+
+    <section id="competences" class="section muted-section"><div class="container"><div class="section-heading centered reveal"><p class="eyebrow">Compétences</p><h2>Technologies que j'utilise</h2></div><div class="tech-groups reveal"><div><h3>Frontend</h3><div class="tech-items"><span><i class="fa-brands fa-html5"></i> HTML5</span><span><i class="fa-brands fa-css3-alt"></i> CSS3</span><span><i class="fa-brands fa-js"></i> JavaScript</span><span><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span></div></div><div><h3>Outils & technologies</h3><div class="tech-items"><span><i class="fa-brands fa-git-alt"></i> Git</span><span><i class="fa-brands fa-github"></i> GitHub</span><span><i class="fa-solid fa-code"></i> VS Code</span><span><i class="fa-brands fa-react"></i> React</span><span><i class="fa-brands fa-node-js"></i> Node.js</span><span><i class="fa-solid fa-plug"></i> APIs</span></div></div></div></div></section>
+
+    <section class="stats-section"><div class="container stats-grid reveal"><div><strong>5+</strong><span>Projets réalisés</span></div><div><strong>3+</strong><span>Technologies maîtrisées</span></div><div><strong>2+</strong><span>Clients accompagnés</span></div><div><strong>100%</strong><span>Engagement</span></div></div></section>
+
+    <section class="section faq-section"><div class="container narrow"><div class="section-heading centered reveal"><p class="eyebrow">Questions fréquentes</p><h2>FAQ</h2></div><div class="faq-list">
+      <details class="reveal"><summary>Combien coûte un site web ?<i class="fa-solid fa-plus"></i></summary><p>Le prix dépend du type de projet, du nombre de pages, des fonctionnalités et des besoins spécifiques. Chaque projet fait donc l'objet d'une estimation adaptée.</p></details><details class="reveal"><summary>Travaillez-vous avec des entreprises locales ?<i class="fa-solid fa-plus"></i></summary><p>Oui. Je travaille avec des entreprises, commerces, entrepreneurs et organisations, notamment à Kolwezi, et je peux également travailler à distance.</p></details><details class="reveal"><summary>Un site peut-il être consulté sur téléphone ?<i class="fa-solid fa-plus"></i></summary><p>Oui. Les sites sont conçus pour s'adapter aux smartphones, tablettes et ordinateurs.</p></details><details class="reveal"><summary>Combien de temps faut-il pour réaliser un projet ?<i class="fa-solid fa-plus"></i></summary><p>La durée dépend de la complexité du projet et des éléments nécessaires à sa réalisation.</p></details><details class="reveal"><summary>Comment commencer un projet ?<i class="fa-solid fa-plus"></i></summary><p>Il suffit de me contacter afin de présenter votre besoin et discuter des prochaines étapes.</p></details>
+    </div></div></section>
+
+    <section id="contact" class="contact-section"><div class="container contact-grid"><div class="contact-copy reveal"><p class="eyebrow light">Contact</p><h2>Vous avez un projet ? Parlons-en.</h2><p>Vous avez une entreprise, un commerce, une idée ou un projet qui mérite d'être présent en ligne ? Décrivez-moi votre besoin et discutons ensemble de la meilleure façon de le concrétiser.</p><ul class="contact-list"><li><i class="fa-brands fa-whatsapp"></i><span>WhatsApp<a href="https://wa.me/243972010300" target="_blank" rel="noopener">+243 972 010 300</a></span></li><li><i class="fa-regular fa-envelope"></i><span>Email<a href="mailto:henockspeech@gmail.com">henockspeech@gmail.com</a></span></li><li><i class="fa-solid fa-location-dot"></i><span>Localisation<b>Kolwezi, République démocratique du Congo</b></span></li></ul></div><form id="contact-form" class="contact-form reveal"><label>Nom<input name="nom" required placeholder="Votre nom"></label><label>Email<input name="email" type="email" required placeholder="Votre adresse email"></label><label>Téléphone / WhatsApp<input name="telephone" type="tel" placeholder="Votre numéro"></label><label>Type de projet<select name="projet"><option>Site vitrine</option><option>Landing page</option><option>Site pour commerce</option><option>Refonte de site</option><option>Autre</option></select></label><label class="full">Message<textarea name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea></label><button class="button primary full" type="submit">Envoyer ma demande <i class="fa-brands fa-whatsapp"></i></button><p class="form-note full">Votre demande s'ouvrira directement dans WhatsApp.</p></form></div></section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/243972010300" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#accueil"><img class="brand-logo" src="IMAGES/BLANC.png" alt="Logo Henock Ami"><span>HENOCK <b>AMI</b></span></a><p>Des solutions web pensées pour votre activité.</p></div><div><h3>Navigation</h3><a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#services">Services</a><a href="#projets">Projets</a><a href="#contact">Contact</a></div><div><h3>Réseaux</h3><a href="https://github.com/henockspeech-hash" target="_blank" rel="noopener">GitHub</a><a href="#accueil">LinkedIn</a><a href="#accueil">Facebook</a><a href="#accueil">Instagram</a><a href="#accueil">TikTok</a><a href="https://wa.me/243972010300" target="_blank" rel="noopener">WhatsApp</a></div></div><div class="container footer-bottom"><span>© 2026 Henock Ami. Tous droits réservés.</span><span>Conçu & développé par Henock Ami.</span></div></footer>
+  <script src="script.js"></script>
+</body>
 </html>
